@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+body { background: #FAF5EA; color: #2A2523; overflow-x: hidden; }
+:focus-visible { outline: 2px solid #B08A3E; outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition-duration: 0.01ms !important; } }
+.pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+.gold-rule { height: 1px; background: linear-gradient(90deg, #B08A3E, transparent); }
