@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Reveal from "./Reveal";
 import { IMG } from "@/lib/data";
 import { MapPin, Heart, BedDouble, Users } from "lucide-react";
@@ -28,7 +28,6 @@ export default function About() {
             <div>
               <h2 className="font-serif text-4xl leading-tight text-maroon md:text-5xl">A Stay That Feels Like Home</h2>
               <p className="mt-6 max-w-prose font-serif text-xl leading-relaxed text-earth">Some journeys are not only about reaching a place. They are about finding somewhere quiet to pause, pray and feel at home.</p>
-              <p className="mt-4 max-w-prose leading-relaxed text-ink/80">Sri Datta Avadhutha Home Stay is a simple, welcoming base for your Pithapuram visit, in the China Bazar area and close to the town&apos;s temples. It is run with the comforts that matter after a long day of travel and darshan in mind.</p>
             </div>
           </div>
         </Reveal>
