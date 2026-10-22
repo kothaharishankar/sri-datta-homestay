@@ -3,8 +3,8 @@ import Reveal from "./Reveal";
 import { IMG, waLink } from "@/lib/data";
 
 const ROOMS = [
-  { img: IMG.ac, title: "Comfortable AC Rooms", text: "Simple, comfortable rooms suited to pilgrims and families.", pos: "object-[50%_70%]", msg: "Hello, I would like to check AC room availability at Sri Datta Avadhutha Home Stay in Pithapuram." },
-  { img: IMG.carved, title: "Non-AC Rooms", text: "A practical option for guests seeking straightforward accommodation.", pos: "object-center", msg: "Hello, I would like to check Non-AC room availability at Sri Datta Avadhutha Home Stay in Pithapuram." },
+  { img: IMG.acMain, title: "Comfortable AC Rooms", text: "Simple, comfortable rooms suited to pilgrims and families.", pos: "object-center", msg: "Hello, I would like to check AC room availability at Sri Datta Avadhutha Home Stay in Pithapuram." },
+  { img: IMG.nonAc, title: "Non-AC Rooms", text: "A practical option for guests seeking straightforward accommodation.", pos: "object-center", msg: "Hello, I would like to check Non-AC room availability at Sri Datta Avadhutha Home Stay in Pithapuram." },
 ];
 
 export default function Rooms() {
@@ -12,7 +12,7 @@ export default function Rooms() {
     <section id="rooms" className="bg-sand py-20 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <Reveal><h2 className="max-w-xl font-serif text-4xl text-maroon md:text-5xl">Rooms for Rest &amp; Renewal</h2>
-          <p className="mt-4 max-w-lg text-ink/75">Please contact us for current room availability.</p></Reveal>
+          <p className="mt-4 max-w-lg text-ink/75">Rooms take up to 4 guests. Please contact us for current room availability.</p></Reveal>
         <div className="mt-14 grid gap-12 md:grid-cols-2 md:gap-8">
           {ROOMS.map((r, i) => (
             <Reveal key={r.title} delay={i * 0.1} className={i === 1 ? "md:mt-20" : ""}>

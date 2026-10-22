@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-3 md:px-8">
         <div>
           <p className="font-serif text-xl tracking-widest text-ivory">SRI DATTA AVADHUTHA HOME STAY</p>
-          <address className="mt-4 text-sm not-italic leading-relaxed">Sri Gurudatta Nilayam<br />229, China Bazar Area<br />Pithapuram<br />Andhra Pradesh 533450</address>
+          <address className="mt-4 text-sm not-italic leading-relaxed">Beside 4th building from<br />Venugopala Swami Temple,<br />Door No. 10-1-14,<br />Pithapuram, Andhra Pradesh 533450.</address>
         </div>
         <div className="text-sm leading-8">
           <a href={`tel:${SITE.tel1}`} className="block hover:text-gold-soft">{SITE.phone1}</a>

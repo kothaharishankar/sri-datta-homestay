@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title, description,
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
-  openGraph: { title, description, url: "/", siteName: SITE.name, locale: "en_IN", type: "website", images: [{ url: "/images/hero/hero.jpg", width: 1046, height: 605, alt: SITE.name }] },
+  openGraph: { title, description, url: "/", siteName: SITE.name, locale: "en_IN", type: "website", images: [{ url: "/images/hero/hero.jpg", width: 700, height: 465, alt: SITE.name }] },
   twitter: { card: "summary_large_image", title, description, images: ["/images/hero/hero.jpg"] },
 };
 export const viewport: Viewport = { themeColor: "#6B1423", width: "device-width", initialScale: 1 };

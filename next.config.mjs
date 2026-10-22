@@ -1,3 +1,3 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = { images: { formats: ["image/avif", "image/webp"] }, reactStrictMode: true };
+const nextConfig = { devIndicators: false, images: { formats: ["image/avif", "image/webp"] }, reactStrictMode: true };
 export default nextConfig;
