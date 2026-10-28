@@ -1,4 +1,3 @@
-
 export const SITE = {
   name: "Sri Datta Avadhutha Home Stay",
   associated: "Sri Gurudatta Nilayam",
@@ -9,14 +8,14 @@ export const SITE = {
   tel2: "+919949912777",
   whatsapp: "919550166777",
   address: [
-    "Near Sri Pada Srivallabha",
+    "Near Sri Pada Srivallabha Mahasamsthanam",
     "Beside 4th building from Venugopala Swami Temple",
     "Dr - No. 10 -1 -14",
     "Pithapuram, 533450, A.P.",
   ],
   street: "Dr - No. 10 -1 -14",
   plusCode: "4773+56 Pithapuram, Andhra Pradesh",
-  mapsUrl: "https://maps.app.goo.gl/BDw6HgrZQMk6QWTZ9?g_st=aw",
+  mapsUrl: "https://maps.app.goo.gl/iHSfMt6YEVALEeP47?g_st=aw",
   rating: 4.9,
   reviewCount: 17,
   related: {
@@ -32,17 +31,17 @@ export const WA_MESSAGE =
 export const waLink = (msg: string = WA_MESSAGE) =>
   `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
 
-const PROPERTY_ADDRESS =
-  "Near Sri Pada Srivallabha, Beside 4th building from Venugopala Swami Temple, Dr - No. 10 -1 -14, Pithapuram, 533450, A.P.";
+// Use your exact Google Maps share link for the property.
+export const directionsLink = SITE.mapsUrl;
 
-export const directionsLink =
-  `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-    PROPERTY_ADDRESS
-  )}`;
+// Embed the homestay listing by its name and listed address.
+// This avoids using the nearby temple as the map destination.
+const PROPERTY_MAP_SEARCH =
+  "SRI DATTA AVADHUTHA HOME STAY, Sri Gurudatta Nilayam, 229, China Bazar Area, Pithapuram, Andhra Pradesh 533450";
 
 export const mapsEmbed =
   `https://www.google.com/maps?q=${encodeURIComponent(
-    PROPERTY_ADDRESS
+    PROPERTY_MAP_SEARCH
   )}&output=embed`;
 
 export const mapSearch = (q: string) =>
@@ -183,7 +182,7 @@ export const AMENITIES = [
 export const PLACES = [
   {
     name: "Sri Pada Vallabha Mahasamsthanam",
-    q: "Sripada Srivallabha Mahasamsthanam",
+    q: "Sri Pada Vallabha Mahasamsthanam",
     text: "The birthplace of Sripada Srivallabha, regarded as the first avatar of Lord Dattatreya, and a major pilgrimage destination in Pithapuram.",
     link: "https://sripadasrivallabhamahasamsthanam.com/",
   },
